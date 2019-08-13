@@ -10,7 +10,7 @@ Lock is more high level primitives
 
 Latch Implementation
 
-* Blocking OS Mutex -> expensive (25ns????)
+* Blocking OS Mutex -> expensive (really 25ns is expensive????)
 * Test-and-Set Spinlock (TAS) -> std::atomic<T> -> causes underlying hardware traffic -> not cache-friendly
 * Queue-based Spinlock (MCS) -> how to delete base latch?
 * RWLock
